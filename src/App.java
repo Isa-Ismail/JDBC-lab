@@ -5,7 +5,7 @@ class App extends Thread {
     public static void main(String args[]) {
         int sleep = 50;
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            // Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3301/sys", "root", "doggo");
 
             Statement stmt = con.createStatement();
